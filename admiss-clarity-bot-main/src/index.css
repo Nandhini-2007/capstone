@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 98%;
+    --foreground: 20 10% 10%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 20 10% 10%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 20 10% 10%;
+
+    --primary: 28 52% 36%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 40 9% 94%;
+    --secondary-foreground: 20 10% 10%;
+
+    --muted: 40 9% 94%;
+    --muted-foreground: 20 5% 46%;
+
+    --accent: 28 52% 36%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 30 8% 88%;
+    --input: 30 8% 88%;
+    --ring: 28 52% 36%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 40 9% 94%;
+    --sidebar-foreground: 20 10% 10%;
+    --sidebar-primary: 28 52% 36%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 28 52% 36%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 30 8% 88%;
+    --sidebar-ring: 28 52% 36%;
+
+    --header-background: 40 9% 94%;
+    --chat-bot: 40 9% 94%;
+    --chat-user: 0 0% 100%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-sans;
+    font-family: 'Public Sans', sans-serif;
+  }
+}
